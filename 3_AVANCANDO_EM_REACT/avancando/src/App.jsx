@@ -5,8 +5,10 @@ import ConditionalRender from './components/ConditionalRender'
 import ListRender from './components/ListRender'
 import ManageData from './components/ManageData'
 import ShowUserName from './components/ShowUserName'
-import { useState } from "react"
+import { Fragment, useState } from "react"
 import UserDetails from './components/UserDetails'
+import Fragmento from './components/Fragmento'
+import Container from './components/Container'
 
 function App() {
  
@@ -46,9 +48,13 @@ function App() {
         {/* {cars.map((car) => (
           <CarDetail brand={car.brand} cor={car.cor} km={car.km} newCar={car.newCar}/>
         ))} */}
-        {pessoas.map((pessoa) => (
+        {/* {pessoas.map((pessoa) => (
           <UserDetails key={pessoa.id} nome={pessoa.nome} idade={pessoa.idade} profissão={pessoa.profissão}/>
-        ))}
+        ))} */}
+      {/* <Fragmento/> */}
+     <Container myValue = "teste">
+          <p>Conteúdo</p>
+      </Container> 
       </div>
     </>
   )
