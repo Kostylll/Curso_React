@@ -9,6 +9,9 @@ import { Fragment, useState } from "react"
 import UserDetails from './components/UserDetails'
 import Fragmento from './components/Fragmento'
 import Container from './components/Container'
+import ExecuteFuncion from './components/ExecuteFuncion'
+import Message from './components/Message'
+import ChangeMessage from './components/ChangeMessage'
 
 function App() {
  
@@ -26,6 +29,16 @@ function App() {
       {id: 3,nome: "Ana", idade: 22, profissão: "Recepcionista"}
     ]
 
+    const [message, setMessage] = useState("")
+    
+    const handleMessage = (msg) => {
+      setMessage(msg)
+    }
+
+
+    function showMessage(){
+      console.log("Aparecendo Mensagem")
+    }
 
   return (
     <>
@@ -56,6 +69,9 @@ function App() {
           <p>Conteúdo</p>
       </Container> 
       </div>
+     <ExecuteFuncion myFunction={showMessage}/>
+      <Message msg={message}/>
+      <ChangeMessage handleMessage={handleMessage}/>
     </>
   )
 }
