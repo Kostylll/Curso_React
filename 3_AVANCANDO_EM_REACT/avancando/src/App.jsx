@@ -65,7 +65,7 @@ function App() {
           <UserDetails key={pessoa.id} nome={pessoa.nome} idade={pessoa.idade} profissão={pessoa.profissão}/>
         ))} */}
       {/* <Fragmento/> */}
-     <Container myValue = "teste">
+     <Container linguica = "teste">
           <p>Conteúdo</p>
       </Container> 
       </div>
