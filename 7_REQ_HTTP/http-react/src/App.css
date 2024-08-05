@@ -1,0 +1,73 @@
+.Box {
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(3, 0, 0, 0.1);
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 49.7em;
+    margin-top: 30px;
+}
+
+
+.Box h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.List{
+    justify-content: center;
+    text-align: center;
+}
+
+/* Estilizando o formulário */
+form {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Estilizando os campos de entrada */
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Estilizando o botão */
+  button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  /* Alterando a cor do botão ao passar o mouse */
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Estilizando os rótulos */
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
